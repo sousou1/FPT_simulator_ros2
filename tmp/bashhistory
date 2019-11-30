@@ -1,0 +1,629 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install ros-crystal-gazebo-ros-pkgssudo apt install ros-crystal-gazebo-ros-pkgssafd
+sudo apt install ros-crystal-gazebo-ros-pkgs
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+sudo apt update && sudo apt install curl gnupg2 lsb-release
+sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+export CHOOSE_ROS_DISTRO=crystal  # or bouncy or ardent
+sudo apt update
+curl http://repo.ros2.org/repos.key | sudo apt-key add -
+sudo apt update
+sudo apt install ros-$CHOOSE_ROS_DISTRO-desktop
+sudo apt install python3-argcomplete
+echo "source /opt/ros/$CHOOSE_ROS_DISTRO/setup.bash" >> ~/.bashrc
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt update
+sudo apt install ros-melodic-desktop-full
+sudo rosdep init
+rosdep update
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+nano ~/.bashrc
+source ~/.bashrc
+sros2
+sudo apt install ros-crystal-gazebo-ros-pkgs
+nano ~/.ignition/fuel/config.yaml 
+sudo apt install ros-crystal-gazebo-ros-pkgs
+gazebo /opt/ros/crystal/share/gazebo_plugins/worlds/gazebo_ros_joint_state_publisher_demo.world
+sudo apt install -y     google-mock     libceres-dev     liblua5.3-dev     libboost-dev     libboost-iostreams-dev     libprotobuf-dev     protobuf-compiler     libcairo2-dev     libpcl-dev     python3-sphinx
+mkdir -p ~/turtlebot3_ws/src
+cd ~/turtlebot3_ws
+vcs import src < turtlebot3.repos
+sudo apt search vcs
+sudo apt search 
+sudo apt install python3-vcstool
+vcs import src < turtlebot3.repos
+git
+sudo apt install git
+vcs import src < turtlebot3.repos
+sudo apt install -y     libsdl-image1.2     libsdl-image1.2-dev     libsdl1.2debian     libsdl1.2-dev
+colcon build --symlink-install
+sudo apt install python3-colcon-common-extensions
+sros2
+colcon build --symlink-install
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+colcon build --symlink-install
+curl -sSL http://get.gazebosim.org | sh
+sls
+ls
+cd src/
+ls
+rm -rf cartographer/
+rm -rf navigation2/
+cd turtlebot3/
+ls
+cd turtlebot3
+ls
+rm -rf turtlebot3_navigation2/
+rm -rf turtlebot3_cartographer/
+cd ..
+ls
+cd ..
+colcon build --symlink-install --cmake-clean-cacje
+colcon build --symlink-install --cmake-clean-cache
+cd ..
+chmod +x install-opencv.sh 
+cd turtlebot3_ws/
+colcon build --symlink-install --cmake-clean-cache
+ls
+cd src/
+ls
+cd turtlebot3/
+ls
+cd ..
+cd gazebo/
+ls
+cd ..
+cd turtlebot3/
+ls
+cd turtlebot3_simulations/
+ls
+cd turtlebot3_gazebo/
+ls
+cd ..
+cd turtlebot3_simulations/
+ls
+cd ..
+cd turtlebot3
+ls
+cd ..
+ls
+cd /opt/ros/crystal/
+ls
+cd include/
+ls
+cd rclcpp
+ls
+gedit node.hpp 
+cd ..
+cd
+cd turtlebot3_ws/
+ls
+cd src/
+ls
+rm -rf gazebo/
+rm -rf turtlebot3/
+cd..
+cd ..
+ls
+nano turtlebot3.repos 
+vcs import src < turtlebot3.repos
+colcon build --symlink-install
+cd src/
+git clone https://github.com/ros2/geometry2.git
+cd ..
+colcon build --symlink-install
+cd src/
+ls
+cd geometry2/
+ls
+git checkout crystal
+git branch
+ls
+cd ..
+colcon build --symlink-install
+ls
+sudo apt install ros-crystal-cv-bridge
+cd src/
+lks
+ls
+cd gazebo/
+ls
+cd vision_opencv/
+ls
+rm -rf cv_bridge/
+ls
+cd ..
+sudo apt-get install python3-sphinx
+cd ..
+colcon build --symlink-install
+cd
+mkdir temp
+cd temp/
+ls
+git clone https://github.com/sousou1/turtlebot3.git
+cd turtlebot3/
+ls
+git checkout ros2
+ls
+rm turtlebot3.repos 
+nano turtlebot3.repos
+git add .
+git commit -m "update turtlebot3.repos"
+git config --global user.email "tamusou6953@gmail.com"
+git config --global user.name "sousou1"
+git commit -m "update turtlebot3.repos"
+git push origin HEAD
+cd ..
+cd temp/
+ls
+rm -rf turtlebot3/
+ls
+git clone https://github.com/sousou1/turtlebot3.git
+cd turtlebot3/
+ls
+git checkout ros2
+ls
+nano turtlebot3.repos 
+git add .
+git diff HEAD
+git commit -m "update turtlebot3.repos"
+git push origin HEAD
+cd 
+nano .bashrc 
+source .bashrc 
+nano .bashrc 
+source ~/.bashrc 
+sudo apt-get install ntpdate
+date
+sudo ntpdate ntp.ubuntu.com
+source ~/.bashrc
+nano ~/.bashrc 
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+ros2 param set /gazebo use_sim_time True
+cd /opt/ros/crystal/
+ls
+cd include/
+ls
+opencv_traincascade 
+ls
+cd ..
+ls
+cd src/
+ls
+cd ..
+cd lib/
+ls
+cd ..
+ls
+cd melodic/
+ls
+cd include/
+ls
+cd cv_bridge/
+ls
+cd ..
+ls
+cd ..
+ls
+cd crystal/
+ls
+cd
+cd turtlebot3_ws/
+ls
+nano turtlebot3.repos 
+cd src/
+ls
+cd navigation2/
+ls
+cd navigation2/
+ls
+ros2 topic list
+sros2
+ros2 topic list
+ros2 topic echo /demo/joint_states_demo
+cd /opt/ros/crystal/
+ls
+cd include/
+ls
+cd ..
+ls
+cd ..
+ls
+cd melodic/
+ls
+cd include/
+ls
+cd ..
+cd crystal/
+ls
+cd include/
+ls
+cd geometry_msgs/
+ls
+cd msg/
+ls
+c
+cd ..
+ls
+apt-cache depends ros-crystal-desktop
+apt-cache depends ros-crystal-ros-base
+apt-cache search ros-crystal-tf2
+apt-cache search ros-crystal-desktop
+apt-cache search ros-crystal-
+ros2 topic list
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+cd turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models/
+ls
+cd /usr/share/gazebo-9/
+ls
+sudo git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_simulation.git
+sudo cp 
+sudo cp ~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_worlds/burger.model ./models
+sudo cp ~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_burger ./models
+sudo cp -r ~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_burger ./models
+sudo cp ~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_worlds/burger.model ./worlds
+sudo cp -r ~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_world/ ./models
+cd worlds/
+ls
+cd ..
+ls
+cd models/
+ls
+rm -rf burger.model 
+sudo rm burger.model 
+cd ..
+gazebo ./worlds/burger.model 
+ls
+cd /usr/share/gazebo-9/
+ls
+cd models/
+ls
+sudo rm -rf turtlebot3_burger/
+cd ..
+ls 
+gazebo worlds/FPT_C.world 
+ls
+cd models/
+ls
+ls -a
+cd turtlebot3_world/
+ls
+cd ..
+rm -rf turtlebot3_world/
+sudo rm -rf turtlebot3_world/
+cd ..
+ls
+cd worlds/
+lks
+nano FPT_C.world 
+cd ..
+ls
+gazebo worlds/FPT_C.world 
+cd ..
+ls
+cd gazebo
+ls
+cd ..
+cd gazebo-9/
+ls
+cd media/
+ls
+cd ..
+cd media/
+ls
+cd models/
+ls
+cd ..
+ls
+cd models/
+ls
+ls -a
+cd sun/
+ls
+cd ..
+ls
+cd worlds/
+ls
+cd
+cd /usr/share/gazebo-9/
+ls
+cd worlds/
+ls
+cd 
+cd /usr/share/gazebo-9/worlds/
+ls
+cat FPT_C.world 
+cd ..
+gazebo worlds/FPT_C.world 
+cd models/turtlebot3_burger/
+ls
+cd ..
+cd
+ls
+nano ~/.bashrc 
+source .bashrc 
+ls
+cd /usr/share/gazebo-9/
+ls
+gazebo worlds/FPT_C.world 
+sudo cp -r FPT_C.world /usr/share/gazebo-9/worlds/
+sudo cp -r road_meshes/ /usr/share/gazebo-9/models/
+sudo rm -rf /usr/share/gazebo-9/models/turtlebot3_burger/
+sudo cp -r turtlebot3_burger/ /usr/share/gazebo-9/models/
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+cd /usr/share/gazebo-9/
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+ros2 topic list
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+gazebo worlds/FPT_C.world 
+ls
+gazebo
+gazebo worlds/FPT_C.world 
+cd models/
+ls
+cd turtlebot3_burger/
+ls
+sudo rm -rf model-1_4.sdf 
+cd ..
+gazebo worlds/FPT_C.world 
+cd ..
+ls
+cd models/turtlebot3_burger/
+ls
+nano model.config 
+sudo nano model.
+sudo nano model.config 
+cd ..
+ls
+gazebo worlds/FPT_C.world 
+cd ..
+gazebo worlds/FPT_C.world 
+cd models/
+gazebo worlds/FPT_C.world 
+cd ..
+<link name="camera_link"/>
+gazebo worlds/FPT_C.world 
+cd models/
+ls
+ls -l
+cd turtlebot3_burger/
+ls
+ls -l
+cd ..
+ls
+gazebo worlds/FPT_C.world 
+cd worlds/
+nano FPT_C.world 
+cd ..
+ls
+cd models/
+ls
+rm -r turtlebot3_burger/
+cd turtlebot3_ws/
+ls
+cd
+ls
+cd 
+cd /
+ls
+cd tmp/VirtualBox\ Dropped\ Files/
+ls
+cd 2019-05-28T21\:37\:37.373371000Z/
+ls
+ls -l
+cd turtlebot3_simulations
+ls
+cd ..
+ls
+cd turtlebot3_simulations
+ls
+cd ..
+cd
+cd /tmp/VirtualBox\ Dropped\ Files/
+ls
+cd 2019-05-28T21\:39
+cd 2019-05-28T21\:39\:59.420224000Z/
+LS
+ls
+cp FPT_C.world ~/
+cd ..
+ls
+cd 2019-05-28T21\:41\:27.789047000Z/
+ls
+cp turtlebot3_simulations.zip ~/
+cd
+cd /usr/share/gazebo
+cd ..
+cd gazebo-9/
+ls
+cd worlds/
+ls
+nano burger.model 
+top
+cd
+ls
+sudo cp FPT_C.world /usr/share/gazebo-9/worlds/
+top
+ps --a
+ps -a
+ps
+top
+kill 9945
+top
+ls
+sudo cp -r turtlebot3_burger/ /usr/share/gazebo-9/models/
+ls
+cd turtlebot3_burger/
+ls -l
+cd ..
+ls
+sudo cp -r turtlebot3_burger/ /usr/share/gazebo-9/models/
+ls -l
+sudo cp -r FPT_C.world /usr/share/gazebo-9/worlds/
+sudo cp -r turtlebot3_burger/ /usr/share/gazebo-9/models/
+sudo cp -r FPT_C.world /usr/share/gazebo-9/worlds/
+nano .bashrc 
+source .bashrc 
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+cd /usr/share/gazebo-9/
+gazebo worlds/FPT_C.world 
+ls
+cd models/
+ls
+ls -l
+rm -rf turtlebot3_burger/
+sudo rm -rf turtlebot3_burger/
+cd
+nano .bashrc 
+source .bashrc
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+top
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 4
+history
+sudo cp -r turtlebot3_burger/ /usr/share/gazebo-9/models/
+sudo cp -r FPT_C.world /usr/share/gazebo-9/worlds/
+top
+cd /media/sou/VBox_GAs_5.2.12/
+ls
+./autorun.sh 
+sudo apt search VirtualBox
+sudo apt install virtualbox-guest-utils
+sudo apt install virtualbox-guest-x11
+sudo apt install -y gcc make perl linux-headers-generic
+ls
+cat autorun.sh 
+./VBoxLinuxAdditions.run 
+sudo ./VBoxLinuxAdditions.run 
+lsmod 
+lsmod | grep vbox
+gazebo /usr/share/gazebo-9/worlds/FPT_C.world 
+cd /opt/ros/crystal/include/
+ls
+cd sensor_msgs/
+ls
+cd  ..
+cd image_transport/
+ls
+cd ..
+cd geometry_msgs/
+ls
+cd msg/
+ls
+cd ..
+cd std_msgs/
+ls
+cd msg/
+ls
+ls Mul
+ls 
+cd ..
+cd .
+cd ..
+cd geometry_msgs/
+ls
+cd msg/
+ls
+cat twist.hpp 
+cat twist.h
+cd ..
+cd std_msgs/msg/
+ls
+cat u_int8_multi_array.hpp
+cat u_int8_multi_array__struct.h
+cat u_int8_multi_array__struct.hpp 
+cd ..
+cd sensor_msgs/
+ls
+cd msg/
+ls
+cd 
+cd turtlebot3_
+cd turtlebot3_ws/
+ls
+cd src/
+ls
+cd gazebo/
+ls
+cd gazebo_ros_pkgs/
+ls
+cd gazebo_msgs/
+ls
+cd msg/
+ls
+cd ..
+cd vi
+cd /opt/ros/crystal/
+ls
+cd include/sensor_msgs/
+ls
+cd msg
+ls
+cat image.h
+cat image__struct.h
+cd
+cd /opt/ros/melodic/include/sensor_msgs/
+ls
+cat image_encodings.h 
+cd ..
+ls
+cd cd image_transport/
+ls
+cd sensor_msgs/
+ls
+cd impl/
+ls
+cd ..
+cd crystal/
+ls
+cd
+cd /usr/share/
+ls
+cd gazebo-9/
+cd zytlebot_ros2/
+git checkout .
+git pull
+ls
+rm -rf build/ install/ log/ 
+ls
+git pull
+ls
+cp /usr/share/gazebo-9/worlds/FPT_C.world .
+ls
+cat FPT_C.world 
+mkdir gazebo
+ls
+mv FPT_C.world gazebo/
+ls
+cp -r /usr/share/gazebo-9/models/turtlebot3_burger/ ./gazebo/
+git add ./gazebo/
+git commit -m "add gazebo models"
+git push 
+ls
+cp -r /usr/share/gazebo-9/models/ ./gazebo/
+cd gazebo/
+ls
+cd models/
+cd sun/
+ls
+cd ..
+ls
+cd ground_plane/
+ls
+cd ..
+lls
+cd ..
+git add ./gazebo/
+git commit -m "add models"
+git push
+history
+ls
+cd
+ls
+cd sr
+cd src
+ros2 run turtlebot3_teleop teleop_keyboard
