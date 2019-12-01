@@ -48,6 +48,7 @@ RUN mkdir -p /root/turtlebot3_ws/src \
     && cd /root/turtlebot3_ws\
     && wget https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3/ros2/turtlebot3.repos \
     && vcs import src < turtlebot3.repos \
+    && source /opt/ros/dashing/setup.bash \
     && colcon build --symlink-install
 
 RUN echo 'source ~/turtlebot3_ws/install/setup.bash' >> /root/.bashrc
