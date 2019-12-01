@@ -45,7 +45,7 @@ RUN apt update && apt install  -q -y ros-dashing-gazebo-* \
     python3-vcstool
 
 RUN mkdir -p /root/turtlebot3_ws/src \
-    && cd /root/turtlebot3_ws/src \
+    && cd /root/turtlebot3_ws\
     && wget https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3/ros2/turtlebot3.repos \
     && vcs import src < turtlebot3.repos \
     && colcon build --symlink-install
